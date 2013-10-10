@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016D21DF1806B1F400A1C56B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016D21DE1806B1F400A1C56B /* Cocoa.framework */; };
+		016D21E91806B1F400A1C56B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016D21E71806B1F400A1C56B /* InfoPlist.strings */; };
+		016D21EB1806B1F400A1C56B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D21EA1806B1F400A1C56B /* main.m */; };
+		016D21EF1806B1F400A1C56B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 016D21ED1806B1F400A1C56B /* Credits.rtf */; };
+		016D21F51806B1F400A1C56B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016D21F31806B1F400A1C56B /* MainMenu.xib */; };
+		016D21FE1806B1F400A1C56B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016D21FD1806B1F400A1C56B /* XCTest.framework */; };
+		016D21FF1806B1F400A1C56B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016D21DE1806B1F400A1C56B /* Cocoa.framework */; };
+		016D22071806B1F400A1C56B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016D22051806B1F400A1C56B /* InfoPlist.strings */; };
+		016D22181806B21D00A1C56B /* PWIntervalTree.mm in Sources */ = {isa = PBXBuildFile; fileRef = 016D22141806B21D00A1C56B /* PWIntervalTree.mm */; };
+		016D22191806B21D00A1C56B /* PWIntervalTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D22171806B21D00A1C56B /* PWIntervalTreeNode.m */; };
+		016D221C1806B26000A1C56B /* PWIntervalTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D221B1806B26000A1C56B /* PWIntervalTreeTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		016D22001806B1F400A1C56B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016D21D31806B1F400A1C56B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016D21DA1806B1F400A1C56B;
+			remoteInfo = PWIntervalTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016D21DB1806B1F400A1C56B /* PWIntervalTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWIntervalTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		016D21DE1806B1F400A1C56B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		016D21E11806B1F400A1C56B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		016D21E21806B1F400A1C56B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		016D21E31806B1F400A1C56B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		016D21E61806B1F400A1C56B /* PWIntervalTree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PWIntervalTree-Info.plist"; sourceTree = "<group>"; };
+		016D21E81806B1F400A1C56B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		016D21EA1806B1F400A1C56B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		016D21EC1806B1F400A1C56B /* PWIntervalTree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PWIntervalTree-Prefix.pch"; sourceTree = "<group>"; };
+		016D21EE1806B1F400A1C56B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		016D21F41806B1F400A1C56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		016D21FC1806B1F400A1C56B /* PWIntervalTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWIntervalTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		016D21FD1806B1F400A1C56B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		016D22041806B1F400A1C56B /* PWIntervalTreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PWIntervalTreeTests-Info.plist"; sourceTree = "<group>"; };
+		016D22061806B1F400A1C56B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		016D22121806B21D00A1C56B /* PWIntervalTree-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PWIntervalTree-Private.h"; sourceTree = "<group>"; };
+		016D22131806B21D00A1C56B /* PWIntervalTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWIntervalTree.h; sourceTree = "<group>"; };
+		016D22141806B21D00A1C56B /* PWIntervalTree.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PWIntervalTree.mm; sourceTree = "<group>"; };
+		016D22151806B21D00A1C56B /* PWIntervalTreeNode-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PWIntervalTreeNode-Private.h"; sourceTree = "<group>"; };
+		016D22161806B21D00A1C56B /* PWIntervalTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWIntervalTreeNode.h; sourceTree = "<group>"; };
+		016D22171806B21D00A1C56B /* PWIntervalTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWIntervalTreeNode.m; sourceTree = "<group>"; };
+		016D221A1806B24100A1C56B /* PWInlineVector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PWInlineVector.hpp; sourceTree = "<group>"; };
+		016D221B1806B26000A1C56B /* PWIntervalTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWIntervalTreeTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		016D21D81806B1F400A1C56B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D21DF1806B1F400A1C56B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016D21F91806B1F400A1C56B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D21FF1806B1F400A1C56B /* Cocoa.framework in Frameworks */,
+				016D21FE1806B1F400A1C56B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016D21D21806B1F400A1C56B = {
+			isa = PBXGroup;
+			children = (
+				016D21E41806B1F400A1C56B /* PWIntervalTree */,
+				016D22021806B1F400A1C56B /* PWIntervalTreeTests */,
+				016D21DD1806B1F400A1C56B /* Frameworks */,
+				016D21DC1806B1F400A1C56B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		016D21DC1806B1F400A1C56B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				016D21DB1806B1F400A1C56B /* PWIntervalTree.app */,
+				016D21FC1806B1F400A1C56B /* PWIntervalTreeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		016D21DD1806B1F400A1C56B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016D21DE1806B1F400A1C56B /* Cocoa.framework */,
+				016D21FD1806B1F400A1C56B /* XCTest.framework */,
+				016D21E01806B1F400A1C56B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		016D21E01806B1F400A1C56B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016D21E11806B1F400A1C56B /* AppKit.framework */,
+				016D21E21806B1F400A1C56B /* CoreData.framework */,
+				016D21E31806B1F400A1C56B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		016D21E41806B1F400A1C56B /* PWIntervalTree */ = {
+			isa = PBXGroup;
+			children = (
+				016D22131806B21D00A1C56B /* PWIntervalTree.h */,
+				016D22121806B21D00A1C56B /* PWIntervalTree-Private.h */,
+				016D22141806B21D00A1C56B /* PWIntervalTree.mm */,
+				016D22161806B21D00A1C56B /* PWIntervalTreeNode.h */,
+				016D22151806B21D00A1C56B /* PWIntervalTreeNode-Private.h */,
+				016D22171806B21D00A1C56B /* PWIntervalTreeNode.m */,
+				016D221A1806B24100A1C56B /* PWInlineVector.hpp */,
+				016D21F31806B1F400A1C56B /* MainMenu.xib */,
+				016D21E51806B1F400A1C56B /* Supporting Files */,
+			);
+			path = PWIntervalTree;
+			sourceTree = "<group>";
+		};
+		016D21E51806B1F400A1C56B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				016D21E61806B1F400A1C56B /* PWIntervalTree-Info.plist */,
+				016D21E71806B1F400A1C56B /* InfoPlist.strings */,
+				016D21EA1806B1F400A1C56B /* main.m */,
+				016D21EC1806B1F400A1C56B /* PWIntervalTree-Prefix.pch */,
+				016D21ED1806B1F400A1C56B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		016D22021806B1F400A1C56B /* PWIntervalTreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				016D221B1806B26000A1C56B /* PWIntervalTreeTest.m */,
+				016D22031806B1F400A1C56B /* Supporting Files */,
+			);
+			path = PWIntervalTreeTests;
+			sourceTree = "<group>";
+		};
+		016D22031806B1F400A1C56B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				016D22041806B1F400A1C56B /* PWIntervalTreeTests-Info.plist */,
+				016D22051806B1F400A1C56B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016D21DA1806B1F400A1C56B /* PWIntervalTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016D220C1806B1F400A1C56B /* Build configuration list for PBXNativeTarget "PWIntervalTree" */;
+			buildPhases = (
+				016D21D71806B1F400A1C56B /* Sources */,
+				016D21D81806B1F400A1C56B /* Frameworks */,
+				016D21D91806B1F400A1C56B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWIntervalTree;
+			productName = PWIntervalTree;
+			productReference = 016D21DB1806B1F400A1C56B /* PWIntervalTree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		016D21FB1806B1F400A1C56B /* PWIntervalTreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016D220F1806B1F400A1C56B /* Build configuration list for PBXNativeTarget "PWIntervalTreeTests" */;
+			buildPhases = (
+				016D21F81806B1F400A1C56B /* Sources */,
+				016D21F91806B1F400A1C56B /* Frameworks */,
+				016D21FA1806B1F400A1C56B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				016D22011806B1F400A1C56B /* PBXTargetDependency */,
+			);
+			name = PWIntervalTreeTests;
+			productName = PWIntervalTreeTests;
+			productReference = 016D21FC1806B1F400A1C56B /* PWIntervalTreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		016D21D31806B1F400A1C56B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PW;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ProjectWizards;
+				TargetAttributes = {
+					016D21FB1806B1F400A1C56B = {
+						TestTargetID = 016D21DA1806B1F400A1C56B;
+					};
+				};
+			};
+			buildConfigurationList = 016D21D61806B1F400A1C56B /* Build configuration list for PBXProject "PWIntervalTree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 016D21D21806B1F400A1C56B;
+			productRefGroup = 016D21DC1806B1F400A1C56B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016D21DA1806B1F400A1C56B /* PWIntervalTree */,
+				016D21FB1806B1F400A1C56B /* PWIntervalTreeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		016D21D91806B1F400A1C56B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D21E91806B1F400A1C56B /* InfoPlist.strings in Resources */,
+				016D21EF1806B1F400A1C56B /* Credits.rtf in Resources */,
+				016D21F51806B1F400A1C56B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016D21FA1806B1F400A1C56B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D22071806B1F400A1C56B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		016D21D71806B1F400A1C56B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D21EB1806B1F400A1C56B /* main.m in Sources */,
+				016D22181806B21D00A1C56B /* PWIntervalTree.mm in Sources */,
+				016D22191806B21D00A1C56B /* PWIntervalTreeNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016D21F81806B1F400A1C56B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D221C1806B26000A1C56B /* PWIntervalTreeTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		016D22011806B1F400A1C56B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016D21DA1806B1F400A1C56B /* PWIntervalTree */;
+			targetProxy = 016D22001806B1F400A1C56B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		016D21E71806B1F400A1C56B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016D21E81806B1F400A1C56B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		016D21ED1806B1F400A1C56B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016D21EE1806B1F400A1C56B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		016D21F31806B1F400A1C56B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016D21F41806B1F400A1C56B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		016D22051806B1F400A1C56B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016D22061806B1F400A1C56B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		016D220A1806B1F400A1C56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		016D220B1806B1F400A1C56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		016D220D1806B1F400A1C56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWIntervalTree/PWIntervalTree-Prefix.pch";
+				INFOPLIST_FILE = "PWIntervalTree/PWIntervalTree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		016D220E1806B1F400A1C56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWIntervalTree/PWIntervalTree-Prefix.pch";
+				INFOPLIST_FILE = "PWIntervalTree/PWIntervalTree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		016D22101806B1F400A1C56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PWIntervalTree.app/Contents/MacOS/PWIntervalTree";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWIntervalTree/PWIntervalTree-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PWIntervalTreeTests/PWIntervalTreeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		016D22111806B1F400A1C56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PWIntervalTree.app/Contents/MacOS/PWIntervalTree";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWIntervalTree/PWIntervalTree-Prefix.pch";
+				INFOPLIST_FILE = "PWIntervalTreeTests/PWIntervalTreeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		016D21D61806B1F400A1C56B /* Build configuration list for PBXProject "PWIntervalTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016D220A1806B1F400A1C56B /* Debug */,
+				016D220B1806B1F400A1C56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016D220C1806B1F400A1C56B /* Build configuration list for PBXNativeTarget "PWIntervalTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016D220D1806B1F400A1C56B /* Debug */,
+				016D220E1806B1F400A1C56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		016D220F1806B1F400A1C56B /* Build configuration list for PBXNativeTarget "PWIntervalTreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016D22101806B1F400A1C56B /* Debug */,
+				016D22111806B1F400A1C56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 016D21D31806B1F400A1C56B /* Project object */;
+}
