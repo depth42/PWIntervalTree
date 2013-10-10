@@ -2,8 +2,6 @@
 //  PWIntervalTreeTest.m
 //  PWFoundation
 //
-//  Created by Torsten Radtke on 16.11.09.
-//  Copyright 2009 ProjectWizards. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
