@@ -8,6 +8,11 @@
 
 @interface PWIntervalTreeNode ()
 
+#pragma mark Managing life cycle
+
+- (instancetype)initNilNode;
+- (instancetype)initRootNodeWithNilNode:(PWIntervalTreeNode*)nilNode;
+
 #pragma mark Accessing properties
 
 @property (nonatomic, readwrite, strong) PWIntervalTreeNode*    leftNode;
