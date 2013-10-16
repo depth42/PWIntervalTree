@@ -37,7 +37,7 @@
     
     if (_key <= lowValue)
         overlaps = (lowValue <= _high);
-    else
+    else /* lowValue < _key */
         overlaps = (_key <= highValue);
     
     return overlaps;

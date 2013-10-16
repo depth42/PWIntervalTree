@@ -363,7 +363,9 @@ typedef PWFoundation::inline_vector<PWIntervalTreeRecursionNode, 32> PWIntervalT
             
             recursionNodeStack[currentParentIndex].tryRightBranch = YES;
         }
-        if(node.leftNode.maxHigh >= aLowValue)  // implies x != nil 
+        
+        JXRangeTreeNode* leftNode = node.leftNode;
+        if(leftNode != nil && leftNode.maxHigh >= aLowValue)
         {             
             recursionNodeStack[recursionNodeStackTop].startNode = node;
             recursionNodeStack[recursionNodeStackTop].tryRightBranch = NO;
