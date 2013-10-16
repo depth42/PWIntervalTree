@@ -17,8 +17,6 @@
     if(self = [super init])
     {
         _object = object;
-        _lowValue = lowValue;
-        _highValue = highValue;
         
         _key = lowValue;
         _high = highValue;
@@ -60,6 +58,18 @@
     }
     
     return self;
+}
+
+#pragma mark Accessing properties
+
+- (double)lowValue
+{
+    return _key;
+}
+
+- (double)highValue
+{
+    return _high;
 }
 
 #pragma mark Overlapping interval tree nodes
