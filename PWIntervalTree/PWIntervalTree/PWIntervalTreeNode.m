@@ -10,15 +10,13 @@
 
 #pragma mark Managing life cycle
 
-- (id)initWithObject:(id)object
-            lowValue:(double)lowValue
-           highValue:(double)highValue
+- (instancetype)initWithObject:(id)object
+                      lowValue:(double)lowValue
+                     highValue:(double)highValue
 {
     if(self = [super init])
     {
         _object = object;
-        _lowValue = lowValue;
-        _highValue = highValue;
         
         _key = lowValue;
         _high = highValue;
@@ -26,6 +24,52 @@
     }
     
     return self;
+}
+
+- (instancetype)initNilNode
+{
+    if(self = [super init])
+    {
+        _leftNode = self;
+        _rightNode = self;
+        _parentNode = self;
+        _isRed = NO;
+        _key = -DBL_MAX;
+        _high = -DBL_MAX;
+        _maxHigh = -DBL_MAX;
+        _object = nil;
+    }
+    
+    return self;
+}
+
+- (instancetype)initRootNodeWithNilNode:(PWIntervalTreeNode*)nilNode
+{
+    if(self = [super init])
+    {
+        _leftNode = nilNode;
+        _rightNode = nilNode;
+        _parentNode = nilNode;
+        _isRed = NO;
+        _key = DBL_MAX;
+        _high = DBL_MAX;
+        _maxHigh = DBL_MAX;
+        _object = nil;
+    }
+    
+    return self;
+}
+
+#pragma mark Accessing properties
+
+- (double)lowValue
+{
+    return _key;
+}
+
+- (double)highValue
+{
+    return _high;
 }
 
 #pragma mark Overlapping interval tree nodes
@@ -37,7 +81,7 @@
     
     if (_key <= lowValue)
         overlaps = (lowValue <= _high);
-    else
+    else /* lowValue < _key */
         overlaps = (_key <= highValue);
     
     return overlaps;

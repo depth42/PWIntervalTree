@@ -10,9 +10,9 @@
 
 #pragma mark Managing life cycle
 
-- (id)initWithObject:(id)object
-            lowValue:(double)lowValue
-           highValue:(double)highValue;
+- (instancetype)initWithObject:(id)object
+                      lowValue:(double)lowValue
+                     highValue:(double)highValue;
 
 #pragma mark Accessing properties
 

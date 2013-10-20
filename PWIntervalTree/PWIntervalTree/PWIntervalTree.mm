@@ -36,25 +36,9 @@ typedef PWFoundation::inline_vector<PWIntervalTreeRecursionNode, 32> PWIntervalT
 {
     if(self = [super init])
     {
-        _nilNode = [[PWIntervalTreeNode alloc] init];
-        _nilNode.leftNode = _nilNode;
-        _nilNode.rightNode = _nilNode;
-        _nilNode.parentNode = _nilNode;
-        _nilNode.isRed = NO;
-        _nilNode.key = -DBL_MAX;
-        _nilNode.high = -DBL_MAX;
-        _nilNode.maxHigh = -DBL_MAX;
-        _nilNode.object = nil;
+        _nilNode = [[PWIntervalTreeNode alloc] initNilNode];
         
-        _rootNode = [[PWIntervalTreeNode alloc] init];
-        _rootNode.leftNode = _nilNode;
-        _rootNode.rightNode = _nilNode;
-        _rootNode.parentNode = _nilNode;
-        _rootNode.isRed = NO;
-        _rootNode.key = DBL_MAX;
-        _rootNode.high = DBL_MAX;
-        _rootNode.maxHigh = DBL_MAX;
-        _rootNode.object = nil;
+        _rootNode = [[PWIntervalTreeNode alloc] initRootNodeWithNilNode:_nilNode];
     }
     return self;
 }
@@ -363,7 +347,9 @@ typedef PWFoundation::inline_vector<PWIntervalTreeRecursionNode, 32> PWIntervalT
             
             recursionNodeStack[currentParentIndex].tryRightBranch = YES;
         }
-        if(node.leftNode.maxHigh >= aLowValue)  // implies x != nil 
+        
+        PWIntervalTreeNode* leftNode = node.leftNode;
+        if(leftNode != nil && leftNode.maxHigh >= aLowValue)
         {             
             recursionNodeStack[recursionNodeStackTop].startNode = node;
             recursionNodeStack[recursionNodeStackTop].tryRightBranch = NO;

@@ -131,6 +131,7 @@
 			);
 			path = PWIntervalTree;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		016D21E51806B1F400A1C56B /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -152,6 +153,7 @@
 			);
 			path = PWIntervalTreeTests;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		016D22031806B1F400A1C56B /* Supporting Files */ = {
 			isa = PBXGroup;
